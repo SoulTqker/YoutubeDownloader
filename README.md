@@ -4,5 +4,6 @@ So this Downloader will help you by downloading for you , your favourite Logan P
 
 To use this tool you will need an environment like PyCharm or Sublime Text and go to your environment's cmd and type : pip install pytube
 
+PS : There is some bugs with certain videos so if you want to edit the prog to make it work do it
 
 WARNING: DOWNLOADING COPYRIGHTED MATERIAL IS HIGHLY ILLEGAL! I DO NOT TAKE ANY RESPONSIBILITY FOR YOUR USAGE OF THIS TOOL! THIS IS FOR EDUCATIONAL PURPOSES ONLY! i guess
