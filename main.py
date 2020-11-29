@@ -6,9 +6,7 @@ username = os.getlogin()
 video_list = []
 
 print("Welcome aboard the trash Youtube-Downloader of the Wati-Dev")
-print("Loading... (its long cause im bad)")
-sleep(3)
-
+sleep(1)
 print('''
 Wat you want?
 
@@ -16,9 +14,6 @@ Wat you want?
 (2) Downloads YouTube Playlist
 
 ''')
-
-
-
 
 
 def res():
@@ -59,9 +54,13 @@ def videos():
         v = pytube.YouTube(video)
         stream = v.streams.get_by_itag(res())
         print(f'Downloading the video number {x}...')
-        stream.download(output_path=path())
-        print(f'Finished for the number {x}')
-    return print("Done my brudda")
+        try:
+            stream.download(output_path=path())
+            print(f'Finished for the number {x}')
+        except:
+            print("sry it's not working for this video, trying for the next video...")
+            pass
+    return print("Done my brudda, your video(s) have been downloaded!")
 
 def playlist():
 
@@ -71,8 +70,12 @@ def playlist():
     for url in playlist:
         video = pytube.YouTube(url)
         stream = video.streams.get_by_itag(22)
-        stream.download(output_path=path())
-    return print("It's gud dude")
+        try:
+            stream.download(output_path=path())
+        except:
+            print("sry it's not working for a video, trying for the next video...")
+            pass
+    return print("It's gud dude, your Playlist have been downloaded!")
 
 
 choice = input("Bad choice: ")
@@ -84,5 +87,3 @@ if choice == "1" or choice == "2":
         videos()
     if choice == "2":
         playlist()
-
-
