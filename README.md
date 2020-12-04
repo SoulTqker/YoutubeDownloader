@@ -1,4 +1,4 @@
-# YoutubeDownloader
+# Youtube Downloader
 This is my trash Youtube-Downloader, with this trash you will get retarded but that's not the point.
 
 So this Downloader will help you by downloading for you , your favourite Logan Paul's videos or your favourite depression piano music Playlist !!!
